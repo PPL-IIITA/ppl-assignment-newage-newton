@@ -24,4 +24,4 @@ if __name__ == "__main__":
         coupler.make_couple(girl, boys, gifts, couples)
 
     for couple in couples:
-        print(vars(couple))
+        print(couple)
