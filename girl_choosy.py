@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""Module fo choosy girl"""
+
 import math
 from utility import Utility
 

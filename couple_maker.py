@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""Module to make couples."""
+
 from girl_choosy import GirlChoosy
 from girl_desparate import GirlDesparate
 from girl_normal import GirlNormal
@@ -11,10 +13,29 @@ from couple import Couple
 from logger import Logger
 
 
-class CoupleMaker:
+class CoupleMaker(object):
+    """Implement method to make couple
+
+    Methods:
+        make_couple : Find a suitable boy for a girl and make a couple.
+    """
     @staticmethod
     def make_couple(girl, boys, gifts, couples):
-        global fem, male
+        """Find a suitable boy for a girl and initialize a couple.
+
+        Find a suitable boy from the list of all boys and initialize a couple.
+        Then perform gifting and calculate happiness, compatibility according to the type of boy and girl
+        in the couple.
+        Update the data in the list of all boys and list of all girls.
+
+        Arguments :
+            girl : A girl from the list of girls.
+            boys : List of all boys.
+            gifts : List of all gifts.
+            couples : List of all couples.
+        """
+        fem = None
+        male = None
         if girl['category'] == 'c':
             fem = GirlChoosy(girl)
 
@@ -26,6 +47,7 @@ class CoupleMaker:
 
         suit_boy = {}
         if fem.criterion == 'a':
+            """For maximum attractiveness."""
             suit_boy = {'name': None, 'attrac': 0}
             for boy in boys:
                 if (Utility.str_to_bool(boy['status']) is False) and (int(boy['budget']) >= fem.cost) \
@@ -34,6 +56,7 @@ class CoupleMaker:
                     suit_boy['attrac'] = int(boy['attrac'])
 
         elif fem.criterion == 'r':
+            """For maximum girlfriend budget."""
             suit_boy = {'name': None, 'budget': 0}
             for boy in boys:
                 if (Utility.str_to_bool(boy['status']) is False) and (int(boy['budget']) >= fem.cost) \
@@ -42,6 +65,7 @@ class CoupleMaker:
                     suit_boy['budget'] = int(boy['budget'])
 
         elif fem.criterion == 'i':
+            """For maximum intelligence."""
             suit_boy = {'name': None, 'intel': 0}
             for boy in boys:
                 if (Utility.str_to_bool(boy['status']) is False) and (int(boy['budget']) >= fem.cost) \
@@ -73,6 +97,7 @@ class CoupleMaker:
 
             log = Logger()
             log.couple_logger(vars(couple))
+            """Log couple information in csv file format."""
 
             girl['status'] = 'True'
             girl['partner'] = male.name

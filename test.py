@@ -6,7 +6,8 @@ from couple_maker import CoupleMaker
 from operator import itemgetter
 
 if __name__ == "__main__":
-    k = int(input("Enter k: "))
+
+    k = int(input())
     Generator.boy_generator('boys.csv', 100)
     Generator.girl_generator('girls.csv', 10)
     Generator.gift_generator('gifts.csv', 100)
