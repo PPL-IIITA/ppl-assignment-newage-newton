@@ -2,8 +2,8 @@
 
 """Module containing class for the geek boy."""
 
-from utility import Utility
 from operator import itemgetter
+from utility import Utility
 
 
 class BoyGeek(object):

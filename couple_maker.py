@@ -24,8 +24,8 @@ class CoupleMaker(object):
         """Find a suitable boy for a girl and initialize a couple.
 
         Find a suitable boy from the list of all boys and initialize a couple.
-        Then perform gifting and calculate happiness, compatibility according to the type of boy and girl
-        in the couple.
+        Then perform gifting and calculate happiness, compatibility according
+        to the type of boy and girl in the couple.
         Update the data in the list of all boys and list of all girls.
 
         Arguments :
@@ -50,8 +50,10 @@ class CoupleMaker(object):
             """For maximum attractiveness."""
             suit_boy = {'name': None, 'attrac': 0}
             for boy in boys:
-                if (Utility.str_to_bool(boy['status']) is False) and (int(boy['budget']) >= fem.cost) \
-                        and (fem.attrac >= int(boy['min_attrac_req'])) and (int(boy['attrac']) > suit_boy['attrac']):
+                if Utility.str_to_bool(boy['status']) is False and \
+                        int(boy['budget']) >= fem.cost and \
+                        fem.attrac >= int(boy['min_attrac_req']) and \
+                        int(boy['attrac']) > suit_boy['attrac']:
                     suit_boy['name'] = boy['name']
                     suit_boy['attrac'] = int(boy['attrac'])
 
@@ -59,8 +61,10 @@ class CoupleMaker(object):
             """For maximum girlfriend budget."""
             suit_boy = {'name': None, 'budget': 0}
             for boy in boys:
-                if (Utility.str_to_bool(boy['status']) is False) and (int(boy['budget']) >= fem.cost) \
-                        and (fem.attrac >= int(boy['min_attrac_req'])) and (int(boy['budget']) > suit_boy['budget']):
+                if Utility.str_to_bool(boy['status']) is False and \
+                        int(boy['budget']) >= fem.cost and \
+                        fem.attrac >= int(boy['min_attrac_req']) and \
+                        int(boy['budget']) > suit_boy['budget']:
                     suit_boy['name'] = boy['name']
                     suit_boy['budget'] = int(boy['budget'])
 
@@ -68,8 +72,10 @@ class CoupleMaker(object):
             """For maximum intelligence."""
             suit_boy = {'name': None, 'intel': 0}
             for boy in boys:
-                if (Utility.str_to_bool(boy['status']) is False) and (int(boy['budget']) >= fem.cost) \
-                        and (fem.attrac >= int(boy['min_attrac_req'])) and (int(boy['intel']) > suit_boy['intel']):
+                if Utility.str_to_bool(boy['status']) is False and \
+                        int(boy['budget']) >= fem.cost and \
+                        fem.attrac >= int(boy['min_attrac_req']) and \
+                        int(boy['intel']) > suit_boy['intel']:
                     suit_boy['name'] = boy['name']
                     suit_boy['intel'] = int(boy['intel'])
 
