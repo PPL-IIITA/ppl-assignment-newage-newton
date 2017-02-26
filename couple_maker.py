@@ -3,7 +3,7 @@
 """Module to make couples."""
 
 from girl_choosy import GirlChoosy
-from girl_desparate import GirlDesparate
+from girl_desparate import GirlDesperate
 from girl_normal import GirlNormal
 from boy_generous import BoyGenerous
 from boy_geek import BoyGeek
@@ -43,7 +43,7 @@ class CoupleMaker(object):
             fem = GirlNormal(girl)
 
         elif girl['category'] == 'd':
-            fem = GirlDesparate(girl)
+            fem = GirlDesperate(girl)
 
         suit_boy = {}
         if fem.criterion == 'a':
