@@ -1,18 +1,32 @@
-##Priciples of Programming Languages Assignment
+Clone the repository
 
-For question 1
+    cd submission2
 
-$ python3 question1.py
+For question 3
 
-For question 2
+    python3 question3.py
+  
+ For question 4
+ 
+    python3 question4.py
+ 
+ For question 5
 
-$ python3 question2.py
+	python3 question5.py
 
+For question 6
 
-Question 2 asks for "k". To be entered on command line.
+	python3 question6.py
 
-Documentation browser - Open index.html
+For question 7
 
-[Documentatiom](https://ppl-iiita.github.io/ppl-assignment-newage-newton/)
+	python3 question7.py
 
-Tested on ubuntu 16.10 with python 3.5.2+
+**For Documentation**
+Open submission2/index.html or [Open this link](https://ppl-iiita.github.io/ppl-assignment-newage-newton/submission2/)
+
+**For manually generating documentation**
+
+    pydoc -w ./modulename
+
+*Tested on ubuntu 16.10 with python 3.5.2+*
