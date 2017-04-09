@@ -1,0 +1,114 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module generator</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>generator</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/prince/Desktop/ppl-assignment-newage-newton/generator.py">/home/prince/Desktop/ppl-assignment-newage-newton/generator.py</a></font></td></tr></table>
+    <p><tt>Module&nbsp;to&nbsp;generate&nbsp;random&nbsp;boys,&nbsp;girls&nbsp;and&nbsp;gifts&nbsp;in&nbsp;csv&nbsp;file&nbsp;format.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="csv.html">csv</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="string.html">string</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="generator.html#Generator">Generator</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Generator">class <strong>Generator</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;containing&nbsp;methods&nbsp;to&nbsp;generate&nbsp;random&nbsp;boys,&nbsp;girls&nbsp;and&nbsp;gifts.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;boy_generator&nbsp;:&nbsp;Generate&nbsp;a&nbsp;csv&nbsp;file&nbsp;containing&nbsp;information&nbsp;of&nbsp;boys.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;girl_generator&nbsp;:&nbsp;Generate&nbsp;a&nbsp;csv&nbsp;file&nbsp;containing&nbsp;information&nbsp;of&nbsp;girls.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;gift_generator&nbsp;:&nbsp;Generate&nbsp;a&nbsp;csv&nbsp;file&nbsp;containing&nbsp;information&nbsp;of&nbsp;gifts.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="Generator-boy_generator"><strong>boy_generator</strong></a>(name, num)</dt><dd><tt>Method&nbsp;to&nbsp;generate&nbsp;random&nbsp;information&nbsp;for&nbsp;boys.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;:&nbsp;Name&nbsp;of&nbsp;csv&nbsp;file&nbsp;to&nbsp;be&nbsp;generated.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num&nbsp;:&nbsp;No.&nbsp;of&nbsp;boys&nbsp;to&nbsp;be&nbsp;generated.<br>
+&nbsp;<br>
+Fieldnames:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;:&nbsp;Name&nbsp;-&nbsp;6&nbsp;lowercase&nbsp;alphabets].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;attrac&nbsp;:&nbsp;Attractiveness&nbsp;-&nbsp;integer&nbsp;1-10.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;intel&nbsp;:&nbsp;Intelligence&nbsp;-&nbsp;integer&nbsp;1-10.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;budget&nbsp;:&nbsp;Girlfriend&nbsp;budget&nbsp;-&nbsp;integer&nbsp;1000-5000.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;min_attrac_req&nbsp;:&nbsp;Minimum&nbsp;attraction&nbsp;requirement&nbsp;from&nbsp;girlfriend&nbsp;-&nbsp;integer&nbsp;1-10.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;happiness&nbsp;:&nbsp;Happiness.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;amount_spent&nbsp;:&nbsp;Amount&nbsp;spent&nbsp;in&nbsp;buying&nbsp;gifts.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;status&nbsp;:&nbsp;Relationship&nbsp;status&nbsp;-&nbsp;bool&nbsp;True-Committed,&nbsp;False-Single.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;partner&nbsp;:&nbsp;Name&nbsp;of&nbsp;girlfriend.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;category&nbsp;:&nbsp;mi-miser,&nbsp;gk-geek,&nbsp;gs-generous.</tt></dd></dl>
+
+<dl><dt><a name="Generator-gift_generator"><strong>gift_generator</strong></a>(name, num)</dt><dd><tt>Method&nbsp;to&nbsp;generate&nbsp;random&nbsp;information&nbsp;for&nbsp;gifts.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;:&nbsp;Name&nbsp;of&nbsp;csv&nbsp;file&nbsp;to&nbsp;generated.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num&nbsp;:&nbsp;No.&nbsp;of&nbsp;gifts&nbsp;to&nbsp;be&nbsp;generated.<br>
+&nbsp;<br>
+Fieldnames:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;category&nbsp;:&nbsp;e-essential,&nbsp;u-utility,&nbsp;l-luxury<br>
+&nbsp;&nbsp;&nbsp;&nbsp;price&nbsp;:&nbsp;Price&nbsp;of&nbsp;gift.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;:&nbsp;Value&nbsp;of&nbsp;gift.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;util_value&nbsp;:&nbsp;Utility&nbsp;value&nbsp;-&nbsp;nonzero&nbsp;for&nbsp;utility&nbsp;gifts,&nbsp;zero&nbsp;otherwise.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;util_class&nbsp;:&nbsp;Utility&nbsp;class&nbsp;-&nbsp;nonzero&nbsp;for&nbsp;utility&nbsp;gifts,&nbsp;zero&nbsp;otherwise.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lux_rating&nbsp;:&nbsp;Luxury&nbsp;rating&nbsp;-&nbsp;nonzero&nbsp;for&nbsp;luxury&nbsp;gifts,&nbsp;zero&nbsp;otherwise.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lux_diff&nbsp;:&nbsp;Difficulty&nbsp;to&nbsp;obtain&nbsp;-&nbsp;nonzero&nbsp;for&nbsp;luxury&nbsp;gifts,&nbsp;zero&nbsp;otherwise.</tt></dd></dl>
+
+<dl><dt><a name="Generator-girl_generator"><strong>girl_generator</strong></a>(name, num)</dt><dd><tt>Method&nbsp;to&nbsp;generate&nbsp;random&nbsp;information&nbsp;for&nbsp;girls.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;:&nbsp;Name&nbsp;of&nbsp;csv&nbsp;file&nbsp;to&nbsp;be&nbsp;generated.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num&nbsp;:&nbsp;No.&nbsp;of&nbsp;girls&nbsp;to&nbsp;be&nbsp;generated.<br>
+&nbsp;<br>
+Fieldnames:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;:&nbsp;Name&nbsp;-&nbsp;6&nbsp;lowercase&nbsp;alphabets].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;attrac&nbsp;:&nbsp;Attractiveness&nbsp;-&nbsp;integer&nbsp;1-10.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;intel&nbsp;:&nbsp;Intelligence&nbsp;-&nbsp;integer&nbsp;1-10.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cost&nbsp;:&nbsp;Maintenance&nbsp;cost&nbsp;-&nbsp;integer&nbsp;1000-5000.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;criterion&nbsp;:&nbsp;Criterion&nbsp;for&nbsp;choosing&nbsp;boyfriend&nbsp;-&nbsp;a-most&nbsp;attractive,&nbsp;r-richest,&nbsp;i-most&nbsp;intelligent.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;happiness&nbsp;:&nbsp;Happiness.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;gift_recv&nbsp;:&nbsp;Cost&nbsp;of&nbsp;gifts&nbsp;received.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;status&nbsp;:&nbsp;Relationship&nbsp;status&nbsp;-&nbsp;bool&nbsp;True-Committed,&nbsp;False-Single.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;partner&nbsp;:&nbsp;Name&nbsp;of&nbsp;boyfriend..<br>
+&nbsp;&nbsp;&nbsp;&nbsp;category&nbsp;:&nbsp;d-desperate,&nbsp;c-choosy,&nbsp;n-normal.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
